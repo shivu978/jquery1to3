@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script>
+
+        function str(val)
+        {
+            $.ajax({
+                type:"POST",
+                url :'employe.details.html',
+                data :'emp='+val,
+                success: function(data)
+                {
+                    $("#empdetails").html(data);
+                }
+            });
+        }
+        </script>
+
+    <style>
+        .ajax
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            padding:  10px;
+        }
+        .ajax select
+        {
+            width: 250px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ajax">
+        <select name="company" id="emp" onchange="str()">
+            <option value="">-select company-</option>
+            <option value="1">Colabra Digital</option>
+           <!-- <option value="2">infosys</option>
+            <option value="3">bacancy</option>
+            <option value="4">TCS</option>
+            <option value="">-select company-</option>-->
+        
+         </select>
+    </div>
+
+    <!--employee-->
+    <table id="empdetails"></table>
+</body>
+</html>

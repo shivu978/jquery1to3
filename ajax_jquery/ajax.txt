@@ -1,0 +1,12 @@
+ What Is  Ajax ?
+
+ ANS:  
+      Ajax is stand for asynchorounous javascript and xml.
+       
+        asynchorounous : data will default load or asynchoronize in clock wise on browser.
+
+        javascript:  javascript is used to load using events.
+
+        xml:   xml stand for xtensible markup language it means server data will be loaded.
+
+        ajax is used to load  data without page reload or page refresh

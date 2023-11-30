@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>onchange</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/cart.css'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/cart.js"></script>
+    
+        
+    
+</head>
+<body>
+    <div class="section">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th><h3> View Cart(1)</h3></th>
+                </tr>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th> 
+                <th>PHOTO</th>
+                <th>QTY</th>
+                <th>PRICE</th>
+                <th>ACTION</th>
+
+            </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>001</td>
+                    <td>Samsung</td>
+                    <td><img src="image/samsung A34.avif" width="100px" height="100px"</td>
+                    <td><input type="number" id="qty" value="1" min="1" max="10" onchange="subtotal()"</td>
+                    <td> RS.<input type="text"id="price" value="30000" readonly style="border:none" </td>
+                    <td><button type="button" id="btn">Delete</button></td>
+
+                    
+                </tr>
+                <tr>
+                    <td align="right" colspan="6">
+                      <h1 style="width: 30%; background-color: red;color: white; padding: 18px;">Subtotals Of Rs.<label id="total">30000</label></h1>
+                      </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

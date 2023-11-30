@@ -1,0 +1,32 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.section
+{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 7%;
+    padding: 25px 15px;
+    box-shadow: 8px 8px 8px 8px black;
+}
+input[type="text"]
+{
+  width: 500px;
+  height: auto;
+  padding: 10px;
+}
+
+input[type="submit"]
+{
+  width: 525px;
+  height: auto;
+  padding: 10px;
+}
+
+
